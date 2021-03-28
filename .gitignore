@@ -26,6 +26,7 @@ classes/
 .idea
 .idea_modules
 /.worksheet/
+project/
 
 # Dotty-IDE
 .dotty-ide-artifact
@@ -33,3 +34,6 @@ classes/
 
 # Visual Studio Code
 .vscode
+
+# Metals
+.metals/
