@@ -25,13 +25,12 @@ salary(5, 2)
 
 //////////////////////////////////////////////////////////
 
-// Volume in Jan - 6370
-// Volume in Feb - 4570
-// O rate - 14 per volume unit
-// H rate - twice the O rate
+// Example: Water import tax for Jan and Feb
 
 6370 * 14 + 6370 * 28 + 
 4570 * 14 + 4570 * 28
+
+//////////////////////////////////////////////////////////////////////////////////
 
 def volumeInJan = 6370
 def volumeInFeb = 4570
@@ -57,6 +56,8 @@ def febTax = oTaxFeb + hTaxFeb
 janTax + febTax
 
 /////////////////////////////////////////////////////////////////////////////////
+
+// NOTE: Elaborate on the return type
 
 def oTax(v: Int, r: Int): Int = v * r + 2
 def hTax(v: Int, r: Int): Int = v * r + 3
