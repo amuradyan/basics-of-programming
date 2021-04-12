@@ -41,7 +41,7 @@ def hRate = 2 * oRate
 volumeInJan * oRate + volumeInJan * hRate + 
 volumeInFeb * oRate + volumeInFeb * hRate
 
-def oTaxJan = volumeInJan * oRate + 2 
+def oTaxJan = volumeInJan * oRate + 2
 def hTaxJan = volumeInJan * hRate + 3
 
 def oTaxFeb = volumeInFeb * oRate + 2
@@ -58,6 +58,8 @@ janTax + febTax
 /////////////////////////////////////////////////////////////////////////////////
 
 // NOTE: Elaborate on the return type
+
+// def processName(/p1: T1, p2: T2, .../): /return type/ = /body/
 
 def oTax(v: Int, r: Int): Int = v * r + 2
 def hTax(v: Int, r: Int): Int = v * r + 3
