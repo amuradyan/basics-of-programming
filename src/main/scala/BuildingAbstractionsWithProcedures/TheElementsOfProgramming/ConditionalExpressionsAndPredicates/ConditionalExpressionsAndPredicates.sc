@@ -66,13 +66,13 @@ def vendingMachine(option: Int): String = if (option == 1) {
     "tea"
   } else if (option == 2) {
     "coffee"
-  }else if (option == 3) {
+  } else if (option == 3) {
     "juice"
-  }else if (option == 4) {
+  } else if (option == 4) {
     "water"
-  }else if (option == 5) {
+  } else if (option == 5) {
     "milk"
-  }else {
+  } else {
     "Invalid option!"
   }
 
