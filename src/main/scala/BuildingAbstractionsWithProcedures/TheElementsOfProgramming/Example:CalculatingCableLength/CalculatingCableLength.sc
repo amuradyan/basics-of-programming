@@ -25,4 +25,4 @@ def squareRoot(number: Double): Double = squareRootIteratively(1, number)
 
 def calculateCableLength(bridgeLength: Double, columnHeight: Double) = squareRoot(square(bridgeLength / 2) + square(columnHeight)) * 2
 
-calculateCableLength(6, 4)
+calculateCableLength(6, 4) * 2
