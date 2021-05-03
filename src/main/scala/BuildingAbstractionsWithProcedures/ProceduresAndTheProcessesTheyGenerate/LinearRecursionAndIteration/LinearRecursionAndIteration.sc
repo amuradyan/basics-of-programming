@@ -6,7 +6,9 @@ def possiblePassesRecursively(allowedSymbols: Int, segmentLength: Int): Int = {
   }
 }
 
-{possiblePassesRecursively(10, 5)}
+10 * 9 * 8 * 7 * 6
+
+possiblePassesRecursively(10, 5)
 {10 * possiblePassesRecursively(9, 4)}
 {10 * {9  * possiblePassesRecursively(8, 3)}}
 {10 * {9 * {8  * possiblePassesRecursively(7, 2)}}}
@@ -15,9 +17,7 @@ def possiblePassesRecursively(allowedSymbols: Int, segmentLength: Int): Int = {
 {10 * {9 * {8 * 42}}}
 {10 * {9 * 336}}
 {10 * 3024}
-{30240}
-
-10 * 9 * 8 * 7 * 6
+30240
 
 def loop(counter: Int, accumulator: Int, allowedSymbols: Int, segmentLength: Int): Int = {
   if (counter == segmentLength) {
@@ -49,7 +49,5 @@ loop(5, 30240, 10, 5)
 //       loop(counter + 1, accumulator * (allowedSymbols - counter))
 //     }
 //   }
-
 //   loop(0, 1)
 // }
-
