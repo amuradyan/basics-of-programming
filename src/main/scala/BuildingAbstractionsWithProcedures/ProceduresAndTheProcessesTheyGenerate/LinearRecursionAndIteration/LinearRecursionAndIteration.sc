@@ -39,15 +39,3 @@ loop(3, 720, 10, 5)
 loop(4, 5040, 10, 5)
 loop(5, 30240, 10, 5)
 30240
-
-
-// def numberOfPossibilitiesIteratively(allowedSymbols: Int, segmentLength: Int): Int = {
-//   def loop(counter: Int, accumulator: Int): Int = {
-//     if (counter == segmentLength) {
-//       accumulator
-//     } else {
-//       loop(counter + 1, accumulator * (allowedSymbols - counter))
-//     }
-//   }
-//   loop(0, 1)
-// }
