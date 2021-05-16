@@ -8,21 +8,21 @@ def fib(index: Int): Int = if (index == 0) {
 
 assert(fib(0) == 0)
 assert(fib(1) == 1)
-assert(fib(2) == 1)
+assert(fib(3) == 2)
 
-def loop(a: Int, b: Int, counter: Int): Int = if (counter != 0) {
-  loop(b, a + b, counter - 1)
-} else {
+def loop(a: Int, b: Int, counter: Int): Int = if (counter == 0) {
   b
+} else {
+  loop(b, a + b, counter - 1)
 }
 
 def fibIterative(index: Int): Int = {
-  loop(0, 1, index - 1)
+  loop(0, 1, index)
 }
 
 assert(fibIterative(0) == 0)
 assert(fibIterative(1) == 1)
-assert(fibIterative(2) == 1)
+assert(fibIterative(3) == 2)
 
 
 fibIterative(4)
