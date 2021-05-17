@@ -5,7 +5,7 @@ lazy val root = project
     description := "A simple VS Code Dotty worksheet project.",
     version := "0.1.0",
 
-    scalaVersion := "3.0.0-M3",
+    scalaVersion := "2.13.4",
 
     useScala3doc := true,
   )
